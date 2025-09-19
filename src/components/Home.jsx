@@ -26,6 +26,7 @@ const Home = () => {
         delaySpeed={2000}
       />
     </p>
+    
     <button
   onClick={() => {
     const portfolioSection = document.getElementById("portfolio");
