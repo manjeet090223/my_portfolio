@@ -1,39 +1,46 @@
 @import "tailwindcss";
 
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Raleway:400,500,700|Poppins:400,500,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&family=Open+Sans:300,400,600&display=swap');
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background: #f5f8fd;
+  background: white;
   color: #444;
   scroll-behavior: smooth;
-  margin:0
+  margin: 0;
+  padding: 0;
 }
 
+/* Default headings -> Open Sans */
 h1, h2, h3, h4 {
-  font-family: 'Poppins', sans-serif;
-  color: #2c4964;
+  font-family: 'Open Sans', sans-serif; /* ya Open Sans */
 }
+h2{
+  text-align: center;
+}
+#about h3{
+  text-align: center;
+}
+
+/* Sirf About section headings pe Roboto Mono */
+#about h2, 
+#about h3 ,
+#resume h2, 
+#resume h3,
+#portfolio h2, 
+#portfolio h3,
+#contact h2, 
+#contact h3{
+  font-family: 'Roboto Mono', monospace;
+}
+
 
 section {
   padding: 60px 20px;
   scroll-margin-top: 70px;
 }
 
-.sidebar {
-  background: #1f1f1f;
-}
-.sidebar a {
-  margin: 1.5rem 0;
-  font-size: 1.4rem;
-  color: #aaa;
-  transition: 0.3s;
-}
-.sidebar a:hover,
-.sidebar a.active {
-  color: #fff;
-}
 /* Sidebar Styles */
 .sidebar {
   background: #1f1f1f;

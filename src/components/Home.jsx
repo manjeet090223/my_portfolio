@@ -26,24 +26,35 @@ const Home = () => {
         delaySpeed={2000}
       />
     </p>
-    <button className="mt-6 px-8 py-4 bg-gray-700 text-white rounded-lg font-semibold hover:bg-gray-600 transition-colors duration-300">
-      View Portfolio
-    </button>
+    <button
+  onClick={() => {
+    const portfolioSection = document.getElementById("portfolio");
+    if (portfolioSection) {
+      portfolioSection.scrollIntoView({ behavior: "smooth" });
+    }
+  }}
+  className="mt-6 px-8 py-4 bg-gray-700 text-white rounded-lg font-semibold hover:bg-gray-600 transition-colors duration-300"
+>
+  View Portfolio
+</button>
+
   </motion.div>
 
   {/* Right Image */}
   <motion.div
-    className="flex-1 h-screen flex justify-end"
-    initial={{ opacity: 0 }}
-    animate={{ opacity: [0, 1, 0.6] }}
-    transition={{ duration: 2 }}
-  >
-    <img
-      src={myPhoto}
-      alt="Manjeet"
-      className="h-full max-h-screen md:w-[600px] object-cover shadow-2xl"
-    />
-  </motion.div>
+  className="absolute top-0 right-0 h-screen"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: [0, 1, 0.6] }}
+  transition={{ duration: 2 }}
+>
+  <img
+    src={myPhoto}
+    alt="Manjeet"
+    className="h-full w-auto object-cover shadow-2xl"
+  />
+</motion.div>
+
+
 </section>
 
   );
