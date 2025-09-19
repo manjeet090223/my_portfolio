@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Raleway:400,500,700|Poppins:400,500,600&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #f5f8fd;
+  color: #444;
+  scroll-behavior: smooth;
+  margin:0
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+  color: #2c4964;
+}
+
+section {
+  padding: 60px 20px;
+  scroll-margin-top: 70px;
+}
+
+.sidebar {
+  background: #1f1f1f;
+}
+.sidebar a {
+  margin: 1.5rem 0;
+  font-size: 1.4rem;
+  color: #aaa;
+  transition: 0.3s;
+}
+.sidebar a:hover,
+.sidebar a.active {
+  color: #fff;
+}
+/* Sidebar Styles */
+.sidebar {
+  background: #1f1f1f;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar a {
+  margin: 1.2rem 0;
+  font-size: 1.4rem;
+  color: #aaa;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  color: #fff;
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
