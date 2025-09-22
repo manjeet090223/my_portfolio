@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&family=Open+Sans:300,400,600&display=swap');
 
 body {
@@ -12,9 +12,9 @@ body {
   padding: 0;
 }
 
-/* Default headings -> Open Sans */
+
 h1, h2, h3, h4 {
-  font-family: 'Open Sans', sans-serif; /* ya Open Sans */
+  font-family: 'Open Sans', sans-serif; 
 }
 h2{
   text-align: center;
@@ -23,7 +23,7 @@ h2{
   text-align: center;
 }
 
-/* Sirf About section headings pe Roboto Mono */
+
 #about h2, 
 #about h3 ,
 #resume h2, 
@@ -41,7 +41,7 @@ section {
   scroll-margin-top: 70px;
 }
 
-/* Sidebar Styles */
+
 .sidebar {
   background: #1f1f1f;
   border-right: 1px solid rgba(255,255,255,0.1);
