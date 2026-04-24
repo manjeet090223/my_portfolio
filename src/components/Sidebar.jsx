@@ -7,7 +7,7 @@ const Sidebar = () => {
     { id: "home", label: "Home", icon: <FaHome /> },
     { id: "about", label: "About", icon: <FaUser /> },
     { id: "resume", label: "Resume", icon: <FaFileAlt /> },
-    { id: "portfolio", label: "Portfolio", icon: <FaBriefcase /> },
+    { id: "portfolio", label: "Projects", icon: <FaBriefcase /> },
     { id: "contact", label: "Contact", icon: <FaEnvelope /> },
   ];
 
